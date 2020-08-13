@@ -1,0 +1,17 @@
+html,
+body {
+    background: linear-gradient(90deg, white 50%, black 50%);
+}
+
+h1 {
+    color: black;
+    white-space: nowrap;
+    &:before {
+        content: attr(data-heading);
+        position: absolute;
+        left: 0;
+        color: white;
+        width: 50%;
+        overflow: hidden;
+    }
+}
